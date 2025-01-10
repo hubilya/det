@@ -1,4 +1,4 @@
-* {
+/* * {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -136,6 +136,185 @@ a:hover{
 .header{
 display:none;
 }
+  } 
+
+
+
+ */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+                                         /*MAIN PAGE SECTION*/
+.hero-section{
+    height: 100vh;
+    position: relative;
+}
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.hero-content{
+    display:flex;
+    position:relative;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 50px;
+    height:100vh;
+}
+                                         /*LEFT HERO SECTION*/
+.banner{
+    background:rgba(255, 255, 255, 0.3);
+    width:600px;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:baseline;
+    padding:90px 50px;
+    line-height: 2cm;
+}
+.banner
+{
+   
+    
+  
+
+    
+    position:relative;
+    /*Irrelevant code*/  
+  
+  
+  }
+  .banner::before {
+    content :"";
+    position: absolute;
+    inset: 0;
+    margin:-10px;
+    background: var(--c,red);
+    --_g: #0000 90deg,#000 0;
+    --_p: var(--w) var(--w) no-repeat;
+    --mask:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+      -webkit-mask: var(--mask);
+              mask: var(--mask);
+              
+  }
+.banner h1{
+    color:black;
+    line-height: 1.8cm;
+    font-family:Bebas Neue;
+    font-size:80px;
+    letter-spacing: 0.01cm;
+}
+.banner h2{
+    color:rgb(68, 65, 65);
+    font-weight:100;
+    font-family:Bebas Neue;
+    font-size:30px;
+    letter-spacing: 0.01cm;
+}
+.banner button{
+    text-align:center;
+    height:60px;
+    width:200px;
+    z-index:100;
+    background:rgba(255, 255, 255, 0.3);
+    color:#ffffff;
+    border-style: none;
+    font-weight:200;
+    font-family:Bebas Neue;
+    font-size:26px;
+    cursor: pointer;
+    position:relative;
+
+    box-shadow: inset 5px 0 0 0 #ff4c20;
+    -webkit-transition: ease-in .5s;
+    -moz-transition: ease-in .5s;
+    transition: ease-in .5s;
+}
+
+
+  .banner button:hover {
+    box-shadow: inset 300px 0 0 0 #ff4c20;
+  }
+ 
+
+                                        /*RIGHT HERO SECTION*/
+.header{ 
+    width:580px;
+    height:60px;
+    background:black;
+    display:flex;
+    align-items:center;
+    position:relative;
+    justify-content: space-evenly;
+}
+.navbar a{
+    margin:0 25px;
+    color:#fff;
+    text-decoration: none;
+    font-family: Bebas Neue;
+    font-size:18px;
+    letter-spacing: 0.05cm;
+}
+a:hover{
+    color:#919191;
+}
+
+
+                                        /* HERO FOR MOBILES */
+ @media only screen and (max-width: 600px) {
+    .hero-content{
+        justify-content: center;
+
+    } 
+    .banner{
+        padding:50px 50px;
+        line-height: 1.4cm;
+        align-items:center;    
+        text-align:center;
+        justify-content:center;
+        height:70%;
+        
+        
+    }
+    .banner h1{
+        color:black;
+        line-height: 1.3cm;
+        font-family:Bebas Neue;
+        font-size:50px;
+        letter-spacing: 0.01cm;
+        
+    }
+    .banner h2{
+        color:rgb(68, 65, 65);
+        font-weight:100;
+        font-family:Bebas Neue;
+        font-size:20px;
+        letter-spacing: 0.01cm;
+    }
+    .header{
+        display:none;
+    }
+ 
+  
   } 
 
 
