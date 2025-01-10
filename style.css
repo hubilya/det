@@ -75,10 +75,10 @@ video {
     letter-spacing: 0.01cm;
 }
 .banner h2{
-    color:rgb(68, 65, 65);
+    color:rgb(53, 51, 51);
     font-weight:100;
     font-family:Bebas Neue;
-    font-size:24px;
+    font-size:20px;
     letter-spacing: 0.01cm;
 }
 .banner button{
@@ -158,10 +158,10 @@ a:hover{
         
     }
     .banner h2{
-        color:rgb(68, 65, 65);
+        color:rgb(53, 51, 51);
         font-weight:100;
         font-family:Bebas Neue;
-        font-size:20px;
+        font-size:18px;
         letter-spacing: 0.01cm;
     }
     .header{
