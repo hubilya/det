@@ -74,10 +74,11 @@ video {
     position:relative;
 }
 
-/* .banner button::before {
+ .banner button::before {
     content: '';
     position: absolute;
     bottom:0;
+    top:0;
     z-index:-100;
     width: 200px;
     height:70px;
@@ -90,7 +91,7 @@ video {
 
 .banner button:hover::before {
     box-shadow: inset 300px 0px 0px #ff4c20;
-} */
+} 
 
                                         /*RIGHT HERO SECTION*/
 .header{ 
