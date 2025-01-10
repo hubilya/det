@@ -32,30 +32,8 @@ video {
     height:100vh;
 }
                                          /*LEFT HERO SECTION*/
-.banner{
-    background:rgba(255, 255, 255, 0.3);
-    width:600px;
-    height:100vh;
-    display:flex;
-    flex-direction: column;
-    align-items:start;
-    justify-content:baseline;
-    padding:90px 50px;
-    line-height: 2cm;
-}
-.banner
-{
-   
-    
-  
 
-    
-    position:relative;
-    /*Irrelevant code*/  
-  
-  
-  }
-  .banner::before {
+.banner::before {
     content :"";
     position: absolute;
     inset: 0;
@@ -71,7 +49,24 @@ video {
       -webkit-mask: var(--mask);
               mask: var(--mask);
               
-  }
+  }                                        
+.banner{
+    background:rgba(255, 255, 255, 0.3);
+    
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    flex:0.89;
+    gap:2em;
+    padding:150px 50px;
+    position:relative;
+    
+}
+.bannertext{
+    line-height: .8cm;
+}
+
+  
 .banner h1{
     color:black;
     line-height: 1.8cm;
@@ -83,7 +78,7 @@ video {
     color:rgb(68, 65, 65);
     font-weight:100;
     font-family:Bebas Neue;
-    font-size:30px;
+    font-size:24px;
     letter-spacing: 0.01cm;
 }
 .banner button{
@@ -99,7 +94,7 @@ video {
     font-size:26px;
     cursor: pointer;
     position:relative;
-
+    letter-spacing:.05cm;
     box-shadow: inset 5px 0 0 0 #ff4c20;
     -webkit-transition: ease-in .5s;
     -moz-transition: ease-in .5s;
@@ -141,15 +136,18 @@ a:hover{
         justify-content: center;
 
     } 
+    .banner button{
+        width:200px;
+        height:50px;
+    }
     .banner{
-        padding:50px 50px;
+        padding:0px 50px;
         line-height: 1.4cm;
         align-items:center;    
-        text-align:center;
-        justify-content:center;
-        height:70%;
-        
-        
+        text-align:left;
+        justify-content: center;;
+        gap:1.5em;
+        max-height:55%;  
     }
     .banner h1{
         color:black;
