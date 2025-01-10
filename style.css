@@ -8,6 +8,12 @@
     font-weight: 400;
     font-style: normal;
 }
+.comfortaa {
+    font-family: "Comfortaa", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
                                          /*MAIN PAGE SECTION*/
 .hero-section{
     height: 100vh;
@@ -76,7 +82,7 @@ video {
 }
 .banner h2{
     color:rgb(53, 51, 51);
-    font-weight:100;
+    font-weight:700;
     font-family:Bebas Neue;
     font-size:20px;
     letter-spacing: 0.01cm;
@@ -159,9 +165,9 @@ a:hover{
     }
     .banner h2{
         color:rgb(53, 51, 51);
-        font-weight:100;
-        font-family:Bebas Neue;
-        font-size:18px;
+        font-family: Bebas Neue;
+        line-height: 0.5cm;
+        font-size:16px;
         letter-spacing: 0.01cm;
     }
     .header{
