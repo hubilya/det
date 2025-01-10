@@ -30,6 +30,7 @@ video {
     justify-content:space-between;
     align-items:center;
     margin:0 50px;
+    height:100vh;
 }
                                          /*LEFT HERO SECTION*/
 .banner{
@@ -116,12 +117,28 @@ a:hover{
  @media only screen and (max-width: 600px) {
     .hero-content{
         justify-content: center;
+
     } 
     .banner{
-        
+        padding:60px 50px;
+    line-height: 1.6cm;
         align-items:center;    
         text-align:center;
-        height:100vh;
+        height:80vh;
+    }
+    .banner h1{
+        color:black;
+        line-height: 1.3cm;
+        font-family:Bebas Neue;
+        font-size:60px;
+        letter-spacing: 0.01cm;
+    }
+    .banner h2{
+        color:rgb(68, 65, 65);
+        font-weight:100;
+        font-family:Bebas Neue;
+        font-size:20px;
+        letter-spacing: 0.01cm;
     }
 .header{
 display:none;
