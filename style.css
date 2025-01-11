@@ -3,6 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+    background:black;
+}
 .bebas-neue-regular {
     font-family: "Bebas Neue", serif;
     font-weight: 400;
@@ -39,7 +42,7 @@ video {
 }
                                          /*LEFT HERO SECTION*/
 
-.banner::before {
+#cubicle::before {
     content :"";
     position: absolute;
     inset: 0;
@@ -47,6 +50,7 @@ video {
     background: var(--c,red);
     --_g: #0000 90deg,#000 0;
     --_p: var(--w) var(--w) no-repeat;
+    --c:rgb(255, 94, 0);--w:10px;--b:10px;
     --mask:
       conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
       conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
@@ -110,6 +114,7 @@ video {
 
   .banner button:hover {
     box-shadow: inset 300px 0 0 0 #ff4c20;
+    /* cursor: url(dollar.png), auto; */
   }
  
 
@@ -151,7 +156,7 @@ a:hover{
         line-height: 1.4cm;
         align-items:center;    
         text-align:left;
-        justify-content: center;;
+        justify-content: center;
         gap:1.5em;
         max-height:55%;  
     }
@@ -179,3 +184,154 @@ a:hover{
 
 
 
+  .service-section{
+    margin-top:.5em;
+    height: 100vh;
+    position: relative;
+}
+ .paragraph{
+    background:rgba(27, 27, 27, 0.733);
+    width:100%;
+    height:20%;
+ }
+.paragraph h1{
+    padding:3% 0 0 6%;
+    font-family: Goldman;
+    font-size: 3rem;
+    font-weight:300;
+    color:#dfdfdf;
+}
+/* .service-content{
+    height:80vh;
+    position: relative;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+    gap:2em;
+}
+.box{
+    height:350px;
+    width:350px;
+    background:rgba(0, 0, 0, 0.055);
+    display:flex;
+    justify-content:baseline;
+    flex-direction: column;
+    text-align:left;
+}
+.box img{
+    width:100%;
+    height:70%;
+    object-fit:cover;
+    
+}
+.boxtext h2{
+    font-family: Bebas Neue;
+    margin:0 1em;
+}
+.box button{
+    
+    margin:.5em 1.6em;
+}
+@media only screen and (max-width: 600px) {
+    .box{
+        height:250px;
+        width:250px;
+        background:rgba(0, 0, 0, 0.055);
+        display:flex;
+        justify-content:baseline;
+        flex-direction: column;
+        text-align:left;
+    
+    }
+} */
+.box{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:82vh;
+    gap:.7em;
+    background:black;
+}
+.box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+}
+.image{
+    background:black;
+    height:80vh;
+    flex:1.5;
+}
+.text{
+    
+    background:#111;
+    height:80vh;
+    flex:1;
+    display:flex;
+    align-items:left;
+    justify-content: center;
+    text-align:start;
+    flex-direction: column;
+    padding:10% 10%;
+}
+.text h1{
+    line-height: 2.7cm;
+    font-family:Tourney;
+    font-size:8em;
+    color:#2c2c2c;
+    font-weight:300;
+}
+.text h2{
+    font-family:Goldman;
+    font-size:2em;
+    color:#dfdfdf;
+    font-weight:300;
+    line-height: .7cm;
+}
+.text h3{
+    font-family:Goldman;
+    font-size:1em;
+    color:#9b9b9b;
+    font-weight:300;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .paragraph{
+        background:rgba(27, 27, 27, 0.733);
+        width:100%;
+        height:10%;
+        display:flex;
+        align-items:center ;
+        justify-content: center;
+     }
+     .paragraph h1{
+        padding:0 0 ;
+        font-family: Goldman;
+        font-size: 2rem;
+        font-weight:300;
+        color:#dfdfdf;
+    }
+    
+     .text h1{
+        font-size:6em;
+        line-height: 1.7cm;
+     }
+     .text h2{
+        font-family:Goldman;
+        font-size:1.5em;
+        color:#dfdfdf;
+        font-weight:300;
+        line-height: .5cm;
+    }
+    .text h3{
+        font-family:Goldman;
+        font-size:.8em;
+        color:#9b9b9b;
+        font-weight:300;
+        line-height: .4cm;
+    }
+}
