@@ -162,7 +162,7 @@ a:hover{
     }
     .banner h1{
         color:black;
-        line-height: 1.2cm;
+        line-height: 1.1cm;
         font-family:Bebas Neue;
         font-size:50px;
         letter-spacing: 0.01cm;
@@ -186,17 +186,13 @@ a:hover{
 
   .service-section{
     margin-top:.5em;
-    height: 100vh;
-    position: relative;
+    height: 180vh;
+   
 }
- .paragraph{
-    background:rgba(27, 27, 27, 0.733);
-    width:100%;
-    height:20%;
- }
+ 
 .paragraph h1{
     padding:3% 0 0 6%;
-    font-family: Goldman;
+    font-family: Bebas Neue;
     font-size: 3rem;
     font-weight:300;
     color:#dfdfdf;
@@ -259,13 +255,17 @@ a:hover{
     object-fit:cover;
     
 }
+mark.orange {
+    color:#ff5e00;
+    background: none;
+}
 .image{
     background:black;
     height:80vh;
-    flex:1.5;
+    flex:1;
 }
 .text{
-    
+    position:relative;
     background:#111;
     height:80vh;
     flex:1;
@@ -301,8 +301,7 @@ a:hover{
 
 @media only screen and (max-width: 600px) {
     .paragraph{
-        background:rgba(27, 27, 27, 0.733);
-        width:100%;
+       
         height:10%;
         display:flex;
         align-items:center ;
@@ -310,7 +309,7 @@ a:hover{
      }
      .paragraph h1{
         padding:0 0 ;
-        font-family: Goldman;
+        font-family: Bebas Neue;
         font-size: 2rem;
         font-weight:300;
         color:#dfdfdf;
