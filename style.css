@@ -3,9 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-body{
-    background:black;
-}
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", serif;
     font-weight: 400;
@@ -43,6 +41,7 @@ video {
                                          /*LEFT HERO SECTION*/
 
 #cubicle::before {
+    z-index:111;
     content :"";
     position: absolute;
     inset: 0;
@@ -82,7 +81,7 @@ video {
     line-height: 1.8cm;
     font-family:Bebas Neue;
     font-size:80px;
-    letter-spacing: 0.01cm;
+    letter-spacing: 0cm;
 }
 .banner h2{
     color:rgb(53, 51, 51);
@@ -95,7 +94,7 @@ video {
     text-align:center;
     height:60px;
     width:200px;
-    z-index:100;
+    z-index:121;
     background:rgba(255, 255, 255, 0.3);
     color:#ffffff;
     border-style: none;
@@ -165,7 +164,7 @@ a:hover{
         line-height: 1.1cm;
         font-family:Bebas Neue;
         font-size:50px;
-        letter-spacing: 0.01cm;
+        
         
     }
     .banner h2{
@@ -182,70 +181,29 @@ a:hover{
   
   } 
 
-
+                                        /* SERVICE SECTION */
 
   .service-section{
-    margin-top:.5em;
-    height: 180vh;
-   
+    display:flex;
+    flex-direction: column;
+    gap:.6em;
+    background: #000;
 }
  
 .paragraph h1{
-    padding:3% 0 0 6%;
+    padding:4% 0 0 6%;
     font-family: Bebas Neue;
     font-size: 3rem;
     font-weight:300;
-    color:#dfdfdf;
+    color:#ffffff;
+    letter-spacing: 0.1cm;
 }
-/* .service-content{
+   
+.box{
+    display:flex;
+    align-items:center;
+    justify-content: center;
     height:80vh;
-    position: relative;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content: center;
-    gap:2em;
-}
-.box{
-    height:350px;
-    width:350px;
-    background:rgba(0, 0, 0, 0.055);
-    display:flex;
-    justify-content:baseline;
-    flex-direction: column;
-    text-align:left;
-}
-.box img{
-    width:100%;
-    height:70%;
-    object-fit:cover;
-    
-}
-.boxtext h2{
-    font-family: Bebas Neue;
-    margin:0 1em;
-}
-.box button{
-    
-    margin:.5em 1.6em;
-}
-@media only screen and (max-width: 600px) {
-    .box{
-        height:250px;
-        width:250px;
-        background:rgba(0, 0, 0, 0.055);
-        display:flex;
-        justify-content:baseline;
-        flex-direction: column;
-        text-align:left;
-    
-    }
-} */
-.box{
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    height:82vh;
     gap:.7em;
     background:black;
 }
@@ -291,7 +249,7 @@ mark.orange {
     line-height: .7cm;
 }
 .text h3{
-    font-family:Goldman;
+    font-family:Comfortaa;
     font-size:1em;
     color:#9b9b9b;
     font-weight:300;
@@ -302,17 +260,14 @@ mark.orange {
 @media only screen and (max-width: 600px) {
     .paragraph{
        
-        height:10%;
+        
         display:flex;
-        align-items:center ;
+        align-items:center;
         justify-content: center;
      }
      .paragraph h1{
-        padding:0 0 ;
-        font-family: Bebas Neue;
+        padding:5% 0 3% 0;
         font-size: 2rem;
-        font-weight:300;
-        color:#dfdfdf;
     }
     
      .text h1{
@@ -320,17 +275,118 @@ mark.orange {
         line-height: 1.7cm;
      }
      .text h2{
-        font-family:Goldman;
         font-size:1.5em;
-        color:#dfdfdf;
-        font-weight:300;
         line-height: .5cm;
     }
     .text h3{
-        font-family:Goldman;
         font-size:.8em;
-        color:#9b9b9b;
-        font-weight:300;
         line-height: .4cm;
     }
 }
+
+
+                                        /* PRICE SECTION */
+.price-section{
+    height:100vh;
+    position:relative;
+background:black;
+}
+
+.paragraph2 h1{
+    padding:4% 0 1% 6%;
+    font-family: Bebas Neue;
+    font-size: 3rem;
+    font-weight:300;
+    color:#ffffff;
+    letter-spacing: 0.1cm;
+    
+}
+.price-section img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter:brightness(10%);
+    position:relative;
+    z-index:1;
+}
+
+.price-content{
+    gap:.5em;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    color:white;
+   position:absolute;
+   z-index:2;
+   height:100vh;
+   width:100%;
+   padding:0 8em;
+   font-family: Comfortaa;
+   letter-spacing: -0.05cm;
+   word-spacing: .1cm;
+}
+.type{
+    flex:1;
+}
+.price{
+    flex:1;
+}
+.type h2{
+    
+    margin:2em 0;
+    border-bottom: 4px rgb(255, 94, 0) solid;
+}
+.price h2{
+
+    text-align: end;
+    margin:2em 0;
+    letter-spacing: 0cm;
+    border-bottom: 4px rgb(70, 70, 70) solid;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .paragraph2{
+       
+        
+        display:flex;
+        align-items:center;
+        justify-content: center;
+     }
+     .paragraph2 h1{
+        padding:5% 0 4% 0;
+        font-size: 2rem;
+    }
+
+    .price-content{
+     
+       padding:0 5em;
+ 
+       font-size:10px;
+    }
+    .type{
+        flex:3;
+    }
+    .price{
+        flex:1;
+    }
+    .type h2{
+    
+        margin:3em 0;
+        border-bottom: 3px rgb(255, 94, 0) solid;
+    }
+    .price h2{
+    
+        
+        margin:3em 0;
+        
+        border-bottom: 3px rgb(70, 70, 70) solid;
+    }
+   
+}
+
+
