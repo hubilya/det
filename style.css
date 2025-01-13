@@ -269,6 +269,9 @@ mark.orange {
         padding:5% 0 3% 0;
         font-size: 2rem;
     }
+    .box img{
+        filter:brightness(50%);
+    }
     
      .text h1{
         font-size:6em;
