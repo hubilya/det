@@ -269,10 +269,10 @@ mark.orange {
         padding:5% 0 3% 0;
         font-size: 2rem;
     }
-    .box img{
-        filter:brightness(50%);
+    .image{
+        filter:brightness(70%);
+        
     }
-    
      .text h1{
         font-size:6em;
         line-height: 1.7cm;
@@ -327,28 +327,53 @@ background:black;
    font-family: Comfortaa;
    letter-spacing: -0.05cm;
    word-spacing: .1cm;
+   font-size:14px;
+   
 }
 .type{
     flex:1;
+   
 }
 .price{
     flex:1;
 }
 .type h2{
-    
-    margin:2em 0;
     border-bottom: 4px rgb(255, 94, 0) solid;
+    margin:2em 0;
+    line-height: 2em;
 }
-.price h2{
 
+.price h2{
+    line-height: 2em;
     text-align: end;
     margin:2em 0;
     letter-spacing: 0cm;
     border-bottom: 4px rgb(70, 70, 70) solid;
 }
 
-
-
+@keyframes example {
+    0% {
+      width: 0%;
+    }
+  
+    10% {
+      width: 0%;
+    }
+  
+    100% {
+      max-width: 100%;
+    }
+  }
+  
+  
+  #ok.animate {
+    animation-name: example;
+    
+    width:100%;
+    animation-duration: 3s;
+    white-space:pre;
+  }
+  
 
 
 
