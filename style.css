@@ -164,7 +164,7 @@ a:hover{
         line-height: 1.1cm;
         font-family:Bebas Neue;
         font-size:50px;
-        letter-spacing: 0cm;
+        letter-spacing: -0.1cm;
     }
     .banner h2{
         color:rgb(53, 51, 51);
