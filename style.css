@@ -26,8 +26,9 @@ video {
     height: 100%;
     object-fit: cover;
 
-filter:grayscale(30%);
-    
+
+ filter:contrast(110%);
+
     
 }
 
@@ -64,8 +65,11 @@ filter:grayscale(30%);
               
   }                                        
 .banner{
-    background:rgba(255, 255, 255, 0.3);
-    
+    background:rgba(255, 255, 255, 0.2);
+    animation-delay: 2.2s;
+  animation-name: diss;
+  animation-duration: 9s;
+  opacity:1;
     height:100vh;
     display:flex;
     flex-direction: column;
@@ -73,13 +77,38 @@ filter:grayscale(30%);
     gap:2em;
     padding:150px 50px;
     position:relative;
-    
+    animation-iteration-count: 1;
 }
+@keyframes diss {
+    0% {
+        background:rgba(255, 255, 255, 0.2);
+        opacity:1;
+    }
+   
+    4% {
+      
+        background:rgba(255, 255, 255, 0.2);
+        opacity:0;
+    }
+    30% {
+      
+        background:rgba(255, 255, 255, 0.2);
+        opacity:1;
+    }
+    
+    100% {
+      opacity:1;
+        background:rgba(255, 255, 255, 0.2);
+    }
+  }
 .bannertext{
     line-height: .8cm;
 }
 
-  
+mark.white {
+    color:#ffffff;
+    background: none;
+}
 .banner h1{
     color:black;
     line-height: 1.8cm;
