@@ -15,7 +15,7 @@
     font-weight: 500;
     font-style: normal;
   }
-                                         /*MAIN PAGE SECTION*/
+                                         /*MAIN PAGE */
 .hero-section{
     height: 100vh;
     position: relative;
@@ -25,6 +25,10 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+filter:grayscale(30%);
+    
+    
 }
 
 
@@ -164,7 +168,8 @@ a:hover{
         line-height: 1.1cm;
         font-family:Bebas Neue;
         font-size:50px;
-        letter-spacing: -0.1cm;
+        letter-spacing: 0cm;
+        
     }
     .banner h2{
         color:rgb(53, 51, 51);
@@ -180,7 +185,7 @@ a:hover{
   
   } 
 
-                                        /* SERVICE SECTION */
+                                        /* SERVICE */
 
   .service-section{
     display:flex;
@@ -190,7 +195,7 @@ a:hover{
 }
  
 .paragraph h1{
-    padding:4% 0 0 6%;
+    padding:6% 0 5% 6%;
     font-family: Bebas Neue;
     font-size: 3rem;
     font-weight:300;
@@ -219,11 +224,12 @@ mark.orange {
 .image{
     background:black;
     height:80vh;
-    flex:1;
+    flex:2;
+    position:relative;
 }
 .text{
     position:relative;
-    background:#111;
+    background:#0b0b0b;
     height:80vh;
     flex:1;
     display:flex;
@@ -231,19 +237,21 @@ mark.orange {
     justify-content: center;
     text-align:start;
     flex-direction: column;
-    padding:10% 10%;
+    padding:0% 20%;
+    
 }
+
 .text h1{
     line-height: 2.7cm;
     font-family:Tourney;
     font-size:8em;
-    color:#2c2c2c;
+    color:#1f1f1f;
     font-weight:300;
 }
 .text h2{
     font-family:Goldman;
     font-size:2em;
-    color:#dfdfdf;
+    color:#ffffff;
     font-weight:300;
     line-height: .7cm;
 }
@@ -252,7 +260,7 @@ mark.orange {
     font-size:1em;
     color:#9b9b9b;
     font-weight:300;
-    
+    margin:.2em 0;
 }
 
 
@@ -265,68 +273,76 @@ mark.orange {
         justify-content: center;
      }
      .paragraph h1{
-        padding:5% 0 3% 0;
+        padding:9% 0 6% 0;
         font-size: 2rem;
     }
+    .box{
+        height:60vh;
+    }
+.text{
+    height:60vh;
+    flex:1;
+    padding:0% 10%;
+}
     .image{
-        filter:brightness(70%);
-        
+       height:60vh;
+        flex:1;
     }
      .text h1{
         font-size:6em;
         line-height: 1.7cm;
      }
      .text h2{
-        font-size:1.5em;
+        font-size:1.2em;
         line-height: .5cm;
     }
     .text h3{
-        font-size:.8em;
-        line-height: .4cm;
+        font-size:.7em;
+        line-height: .3cm;
     }
 }
 
 
-                                        /* PRICE SECTION */
+                                        /* PRICE */
 .price-section{
-    height:100vh;
+    height:90vh;
     position:relative;
 background:black;
 }
 
 .paragraph2 h1{
-    padding:4% 0 1% 6%;
+    padding:6% 0 0% 6%;
     font-family: Bebas Neue;
     font-size: 3rem;
     font-weight:300;
     color:#ffffff;
     letter-spacing: 0.1cm;
-    
+    background: #000;
 }
 .price-section img{
     width:100%;
     height:100%;
     object-fit: cover;
-    filter:brightness(10%);
+    filter:brightness(7%);
     position:relative;
     z-index:1;
 }
 
 .price-content{
-    gap:.5em;
+    gap:.9em;
     display:flex;
     align-items: center;
     justify-content:center;
     color:white;
    position:absolute;
    z-index:2;
-   height:100vh;
+   height:90vh;
    width:100%;
-   padding:0 8em;
+   padding:0 10em;
    font-family: Comfortaa;
-   letter-spacing: -0.05cm;
+   letter-spacing: 0cm;
    word-spacing: .1cm;
-   font-size:14px;
+   font-size:12px;
    
 }
 .type{
@@ -337,7 +353,7 @@ background:black;
     flex:1;
 }
 .type h2{
-    border-bottom: 4px rgb(255, 94, 0) solid;
+    border-bottom: 3px rgb(255, 94, 0) solid;
     margin:2em 0;
     line-height: 2em;
 }
@@ -347,7 +363,7 @@ background:black;
     text-align: end;
     margin:2em 0;
     letter-spacing: 0cm;
-    border-bottom: 4px rgb(70, 70, 70) solid;
+    border-bottom: 3px rgb(26, 26, 26) solid;
 }
 
 @keyframes example {
@@ -369,7 +385,7 @@ background:black;
     animation-name: example;
     
     width:100%;
-    animation-duration: 3s;
+    animation-duration: 2s;
     white-space:pre;
   }
   
@@ -377,6 +393,9 @@ background:black;
 
 
 @media only screen and (max-width: 600px) {
+    .price-section{
+        height:70vh;
+    }
     .paragraph2{
        
         
@@ -385,15 +404,16 @@ background:black;
         justify-content: center;
      }
      .paragraph2 h1{
-        padding:5% 0 4% 0;
+        padding:10% 0 2% 0;
         font-size: 2rem;
     }
 
     .price-content{
-     
-       padding:0 5em;
- 
-       font-size:10px;
+       
+       align-items: center;
+       padding:0 6em 9em 6em;
+ height:70vh;
+       font-size:8px;
     }
     .type{
         flex:3;
@@ -402,16 +422,16 @@ background:black;
         flex:1;
     }
     .type h2{
-    
+        line-height: 1.5em;
         margin:3em 0;
         border-bottom: 3px rgb(255, 94, 0) solid;
     }
     .price h2{
     
-        
+        line-height: 1.5em;
         margin:3em 0;
         
-        border-bottom: 3px rgb(70, 70, 70) solid;
+        border-bottom: 3px rgb(26, 26, 26) solid;
     }
    
 }
