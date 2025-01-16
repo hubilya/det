@@ -481,6 +481,7 @@ background:black;
     .type h2{
         line-height: 1.5em;
         margin:3em 0;
+        border-bottom:4px rgba(255, 255, 255, 0) solid;
     }
     .price h2{
     
