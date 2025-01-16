@@ -3,7 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
-
+body{
+    background:#000;
+    
+}
 .bebas-neue-regular {
     font-family: "Bebas Neue", serif;
     font-weight: 400;
@@ -25,6 +28,9 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+
+    
 }
 
 
@@ -101,7 +107,10 @@ video {
     line-height: .8cm;
 }
 
-
+mark.white {
+    color:#ffffff;
+    background: none;
+}
 .banner h1{
     color:black;
     line-height: 1.8cm;
@@ -130,7 +139,7 @@ video {
     cursor: pointer;
     position:relative;
     letter-spacing:.05cm;
-    box-shadow: inset 5px 0 0 0 #ff4c20;
+    box-shadow: inset 5px 0  0 #ff4c20;
     -webkit-transition: ease-in .5s;
     -moz-transition: ease-in .5s;
     transition: ease-in .5s;
@@ -190,7 +199,7 @@ a:hover{
         line-height: 1.1cm;
         font-family:Bebas Neue;
         font-size:50px;
-        letter-spacing: -0.01cm;
+        letter-spacing: 0cm;
         
     }
     .banner h2{
@@ -243,7 +252,10 @@ mark.orange {
     color:#ff5e00;
     background: none;
 }
-
+mark.lazur {
+    color:#00f7ff;
+    background: none;
+}
 .image{
     background:black;
     height:80vh;
@@ -328,8 +340,9 @@ mark.orange {
 
                                         /* PRICE */
 .price-section{
-    height:90vh;
-    position:relative;
+    display:flex;
+    flex-direction: column;
+
 background:black;
 }
 
@@ -341,33 +354,39 @@ background:black;
     color:#ffffff;
     letter-spacing: 0.1cm;
     background: #000;
+    
 }
-.price-section img{
+.price-content{
+    height:100vh;
+   position:relative;
+   z-index:0;
+}
+.price-content img{
     width:100%;
     height:100%;
     object-fit: cover;
     filter:brightness(7%);
-    position:relative;
-    z-index:1;
+    position:absolute;
 }
 
-.price-content{
+.table{
     gap:.9em;
     display:flex;
     align-items: center;
     justify-content:center;
     color:white;
    position:absolute;
-   z-index:2;
-   height:90vh;
-   width:100%;
    padding:0 10em;
    font-family: Comfortaa;
    letter-spacing: 0cm;
    word-spacing: .1cm;
    font-size:12px;
+   height:100vh;
+   width:100%;
+   z-index:3;
    
 }
+
 .type{
     flex:1;
    
@@ -376,7 +395,7 @@ background:black;
     flex:1;
 }
 .type h2{
-    border-bottom: 3px rgb(255, 94, 0) solid;
+    
     margin:2em 0;
     line-height: 2em;
 }
@@ -386,7 +405,7 @@ background:black;
     text-align: end;
     margin:2em 0;
     letter-spacing: 0cm;
-    border-bottom: 3px rgb(26, 26, 26) solid;
+    border-bottom: 4px rgb(26, 26, 26) solid;
 }
 
 @keyframes example {
@@ -394,9 +413,6 @@ background:black;
       width: 0%;
     }
   
-    10% {
-      width: 0%;
-    }
   
     100% {
       max-width: 100%;
@@ -405,42 +421,49 @@ background:black;
   
   
   #ok.animate {
+    border-bottom: 4px rgb(255, 94, 0) solid;
     animation-name: example;
-    
     width:100%;
-    animation-duration: 2s;
+    animation-duration: 3s;
     white-space:pre;
   }
   
 
-.about-section{
-    height:100vh;
-    background:rgb(0, 0, 0);
-    }
-
-
+  
 @media only screen and (max-width: 600px) {
-    .price-section{
-        height:70vh;
-    }
     .paragraph2{
-       
-        
         display:flex;
-        align-items:center;
         justify-content: center;
-     }
-     .paragraph2 h1{
-        padding:10% 0 2% 0;
-        font-size: 2rem;
     }
-
-    .price-content{
+    .paragraph2 h1{
+        padding:10% 0 2% 0;
+        
+        font-size: 2rem;
        
-       align-items: center;
+    }
+    .price-content{
+        height:70vh;
+       position:relative;
+       z-index:0;
+       
+    }
+    .price-content img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        filter:brightness(7%);
+        position:absolute;
+    }
+    
+    .table{
+        gap:.9em;
+        display:flex;
        padding:0 6em 9em 6em;
- height:70vh;
        font-size:8px;
+       height:70vh;
+       width:100%;
+       z-index:3;
+       
     }
     .type{
         flex:3;
@@ -464,3 +487,8 @@ background:black;
 }
 
 
+.about-section{
+    height:100vh;
+    background:rgb(0, 0, 0);
+    color:white;
+    }
