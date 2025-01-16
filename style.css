@@ -223,6 +223,7 @@ a:hover{
     flex-direction: column;
     gap:.6em;
     background: #000;
+    
 }
  
 .paragraph h1{
@@ -241,6 +242,7 @@ a:hover{
     height:80vh;
     gap:.7em;
     background:black;
+    margin:0 3em;
 }
 .box img{
     width:100%;
@@ -259,7 +261,7 @@ mark.lazur {
 .image{
     background:black;
     height:80vh;
-    flex:2;
+    flex:1;
     position:relative;
 }
 .text{
@@ -272,7 +274,7 @@ mark.lazur {
     justify-content: center;
     text-align:start;
     flex-direction: column;
-    padding:0% 20%;
+    padding:0% 10%;
     
 }
 
@@ -280,7 +282,7 @@ mark.lazur {
     line-height: 2.7cm;
     font-family:Tourney;
     font-size:8em;
-    color:#1f1f1f;
+    color:#161616;
     font-weight:300;
 }
 .text h2{
@@ -300,9 +302,8 @@ mark.lazur {
 
 
 @media only screen and (max-width: 600px) {
+    
     .paragraph{
-       
-        
         display:flex;
         align-items:center;
         justify-content: center;
@@ -313,6 +314,7 @@ mark.lazur {
     }
     .box{
         height:60vh;
+        margin:0 0;
     }
 .text{
     height:60vh;
@@ -334,6 +336,7 @@ mark.lazur {
     .text h3{
         font-size:.7em;
         line-height: .3cm;
+        padding:0 3em 0 0;
     }
 }
 
@@ -342,12 +345,12 @@ mark.lazur {
 .price-section{
     display:flex;
     flex-direction: column;
-
+  
 background:black;
 }
 
 .paragraph2 h1{
-    padding:6% 0 0% 6%;
+    padding:6% 0 3% 6%;
     font-family: Bebas Neue;
     font-size: 3rem;
     font-weight:300;
@@ -365,26 +368,27 @@ background:black;
     width:100%;
     height:100%;
     object-fit: cover;
-    filter:brightness(7%);
+    filter:brightness(15%);
+    
     position:absolute;
 }
 
 .table{
     gap:.9em;
     display:flex;
-    align-items: center;
+    align-items: start;
     justify-content:center;
     color:white;
    position:absolute;
    padding:0 10em;
-   font-family: Comfortaa;
+   font-family: Goldman;
    letter-spacing: 0cm;
    word-spacing: .1cm;
    font-size:12px;
    height:100vh;
    width:100%;
    z-index:3;
-   
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.93), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.93))
 }
 
 .type{
@@ -405,7 +409,7 @@ background:black;
     text-align: end;
     margin:2em 0;
     letter-spacing: 0cm;
-    border-bottom: 4px rgb(26, 26, 26) solid;
+    border-bottom: 4px rgba(26, 26, 26, 0.438) solid;
 }
 
 @keyframes example {
@@ -426,6 +430,8 @@ background:black;
     width:100%;
     animation-duration: 3s;
     white-space:pre;
+    font-family: Comfortaa;
+    
   }
   
 
@@ -434,6 +440,7 @@ background:black;
     .paragraph2{
         display:flex;
         justify-content: center;
+
     }
     .paragraph2 h1{
         padding:10% 0 2% 0;
@@ -451,7 +458,7 @@ background:black;
         width:100%;
         height:100%;
         object-fit: cover;
-        filter:brightness(7%);
+        filter:brightness(25%);
         position:absolute;
     }
     
@@ -463,7 +470,7 @@ background:black;
        height:70vh;
        width:100%;
        z-index:3;
-       
+       align-items:center;
     }
     .type{
         flex:3;
@@ -474,14 +481,12 @@ background:black;
     .type h2{
         line-height: 1.5em;
         margin:3em 0;
-        
     }
     .price h2{
     
         line-height: 1.5em;
         margin:3em 0;
-        
-        border-bottom: 3px rgb(26, 26, 26) solid;
+        border-bottom: 4px rgba(26, 26, 26, 0.438) solid;
     }
    
 }
