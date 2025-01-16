@@ -427,7 +427,7 @@ background:black;
   #ok.animate {
     border-bottom: 4px rgb(255, 94, 0) solid;
     animation-name: example;
-    width:100%;
+    
     animation-duration: 3s;
     white-space:pre;
     font-family: Comfortaa;
