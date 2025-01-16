@@ -25,8 +25,7 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-z-index:-111;
-    
+    z-index:-1;
 }
 
 
@@ -103,10 +102,7 @@ z-index:-111;
     line-height: .8cm;
 }
 
-mark.white {
-    color:#000;
-    background: none;
-}
+
 .banner h1{
     color:black;
     line-height: 1.8cm;
@@ -115,7 +111,7 @@ mark.white {
     letter-spacing: 0.01cm;
 }
 .banner h2{
-    color:rgb(26, 26, 26);
+    color:rgb(53, 51, 51);
     font-weight:700;
     font-family:Bebas Neue;
     font-size:20px;
@@ -199,7 +195,7 @@ a:hover{
         
     }
     .banner h2{
-        color:rgb(26, 26, 26);
+        color:rgb(53, 51, 51);
         font-family: Bebas Neue;
         line-height: 0.5cm;
         font-size:16px;
@@ -248,10 +244,7 @@ mark.orange {
     color:#ff5e00;
     background: none;
 }
-mark.lazur {
-    color:#00f7ff;
-    background: none;
-}
+
 .image{
     background:black;
     height:80vh;
@@ -394,7 +387,6 @@ background:black;
     text-align: end;
     margin:2em 0;
     letter-spacing: 0cm;
-    color:#00f7ff;
     border-bottom: 3px rgb(26, 26, 26) solid;
 }
 
