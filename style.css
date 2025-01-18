@@ -612,7 +612,7 @@ background:black;
     .about-section{
         background-color: #0e0e0e;
         position: relative;
-        height:80vh;
+        height:90vh;
         
     }
     .about-container{
@@ -638,7 +638,7 @@ background:black;
         flex:1;
       }
       .about-text{
-        background-color:rgb(10, 10, 10);
+        background-color:rgb(2, 2, 2);
         padding:4% 4% ;
         max-height:250px;
         max-width:600px;
