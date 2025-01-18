@@ -199,7 +199,7 @@ a:hover{
         line-height: 1.1cm;
         font-family:Bebas Neue;
         font-size:50px;
-        letter-spacing: -0.1cm;
+        letter-spacing: 0cm;
         
     }
     .banner h2{
@@ -498,7 +498,7 @@ background:black;
 
     
 .about-section{
-    background-color: #111;
+    background-color: #000000;
     position: relative;
     height:100vh;
 
@@ -512,21 +512,22 @@ background:black;
     justify-content: center;
     flex-direction: row;
     
+    
 }
 .about-text{
     background-color:rgb(10, 10, 10);
-    padding:4% 0% 4% 4% ;
+    padding:4% 4% 4% 4% ;
     max-height:400px;
     max-width:600px;
     width:80%;
   height:80%;
     flex:1;
     text-align: left;
-    line-height:.6cm;
-    
+    line-height:.7cm;
+    position:relative;
 }
 .about-text h1{
-    padding:0 3cm 0 0;
+    
     font-family: Bebas Neue;
     font-size: 3rem;
     font-weight:300;
@@ -535,7 +536,8 @@ background:black;
         line-height:1.2cm;  
 }
 .about-text h2{
-    padding:.5cm 3cm 0 0;
+    padding:0 22% 0 0;
+    text-align:left;
     font-family: Comfortaa;
     font-size: .9rem;
     font-weight:500;
@@ -610,18 +612,19 @@ background:black;
 
 @media only screen and (max-width: 600px) {
     .about-section{
-        background-color: #0e0e0e;
+        background-color: #000000;
         position: relative;
-        height:90vh;
+        height:100vh;
         
     }
     .about-container{
         
-        padding: 3.2em;
+        
         width:100%;
         display:flex;
         align-items: center;
         justify-content: center;
+        gap:4em;
         flex-direction: column-reverse;
         
     }
@@ -629,7 +632,7 @@ background:black;
         max-height:300px;
         max-width:600px;
         width:100%;
-        height:40%;
+        
         position:relative;
         display:flex;
         align-items: center;
@@ -638,17 +641,16 @@ background:black;
         flex:1;
       }
       .about-text{
-        background-color:rgb(2, 2, 2);
-        padding:4% 4% ;
-        max-height:250px;
+        background-color:#0e0e0e;
+        max-height:220px;
         max-width:600px;
-        width:100%;
+        width:80%;
         height:80%;
         text-align: left;
         flex:1;
     }
     .about-text h1{
-        padding:6% 6% 0% 6%;
+        
         font-family: Bebas Neue;
         font-size: 2rem;
         font-weight:300;
@@ -657,7 +659,7 @@ background:black;
         line-height:.8cm; 
     }
     .about-text h2{
-        padding:2% 25% 2% 6%;
+        
         font-family: Comfortaa;
         font-size: .6rem;
         font-weight:500;
@@ -692,7 +694,7 @@ background:black;
     position: relative;
     height:80%; 
     width: 80%; /* Adjust width as needed */ 
-    max-width: 140px; /* Max width for the slideshow */  
+    max-width: 130px; /* Max width for the slideshow */  
     max-height: 200px;
    
 } 
