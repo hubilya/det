@@ -2,7 +2,7 @@ const images = [
 'https://images-cdn.9gag.com/photo/aqbooxv_700b.jpg',
 'https://www.pngarts.com/files/10/Chemical-Guys-Logo-PNG-Picture.png',
 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoSH2wYST4iKztvVKUlkDXfdhwEedVhUCcw&s',
-'https://1000logos.net/wp-content/uploads/2024/07/FurViking-Logo-500x282.png',
+'https://advancedtinting.co.uk/wp-content/uploads/2015/12/LLumarwhite.33142808_std.jpg',
 'https://logowik.com/content/uploads/images/3m-black-old1717713102.logowik.com.webp'
 
 ]; 
