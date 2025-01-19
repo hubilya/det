@@ -605,8 +605,8 @@ background:black;
         background-color: #000000;
         display:flex;
         flex-direction: column-reverse;
-        padding:10em 0em;
-        gap:10em;
+        padding:4em 0em 8em 0em;
+        gap:5em;
     }
     .about-text{
         max-height:400px;
