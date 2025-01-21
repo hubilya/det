@@ -192,7 +192,7 @@ a:hover{
         text-align:left;
         justify-content: center;
         gap:1.5em;
-        max-height:55%;  
+        max-height:370px;  
     }
     .banner h1{
         color:black;
@@ -219,13 +219,16 @@ a:hover{
                                         /* SERVICE */
 
   .service-section{
-    display:flex;
-    flex-direction: column;
-    gap:.6em;
+   
     background: #000;
     
 }
- 
+.service-content{
+    display:flex;
+    flex-direction: column;
+
+    gap:.6em;
+    }
 .paragraph h1{
     padding:6% 0 5% 6%;
     font-family: Bebas Neue;
@@ -239,6 +242,17 @@ a:hover{
     display:flex;
     align-items:center;
     justify-content: center;
+    flex-direction: row-reverse;
+    height:80vh;
+    gap:.7em;
+    background:black;
+    margin:0 3em;
+}
+#second{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
     height:80vh;
     gap:.7em;
     background:black;
@@ -282,7 +296,7 @@ mark.lazur {
     line-height: 2.7cm;
     font-family:Tourney;
     font-size:8em;
-    color:#161616;
+    color:#0f0f0f;
     font-weight:300;
 }
 .text h2{
@@ -302,28 +316,64 @@ mark.lazur {
 
 
 @media only screen and (max-width: 600px) {
-    
+    .service-section{
+       
+        background: #000;
+        
+    }
+    .service-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap:1em;
+    }
     .paragraph{
         display:flex;
         align-items:center;
         justify-content: center;
      }
      .paragraph h1{
-        padding:9% 0 6% 0;
+        padding: 8% 0 ;
         font-size: 2rem;
     }
     .box{
-        height:60vh;
-        margin:0 0;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        max-height:60vh;
+        gap:.2em;
+        background:black;
+        margin:0 .8em;
     }
-.text{
-    height:60vh;
-    flex:1;
-    padding:0% 10%;
-}
+    #second{
+        flex-direction: column; 
+        margin:0 .8em;
+        max-height:60vh;
+        gap:.2em;
+    }
     .image{
-       height:60vh;
+        background:black;
+        max-height:20vh;
+        width:100%;
+        filter:grayscale(0%);
         flex:1;
+        position:relative;
+    }
+    .text{
+        max-height:40vh;
+        position:relative;
+        background:#0b0b0b;
+        flex:1;
+        width:100%;
+        
+        display:flex;
+        align-items:left;
+        justify-content: center;
+        
+        flex-direction: column;
+        padding:10% 10%;
+        
     }
      .text h1{
         font-size:6em;
@@ -372,8 +422,16 @@ background:black;
     
     position:absolute;
 }
-
-.table{
+.overlay::before {
+    content: '';
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.93));
+}
+    .table{
     gap:.9em;
     display:flex;
     align-items: start;
@@ -385,12 +443,27 @@ background:black;
    letter-spacing: 0cm;
    word-spacing: .1cm;
    font-size:12px;
-   height:100vh;
+   height:50vh;
    width:100%;
    z-index:3;
-   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.93))
 }
-
+.price-content button{
+    position:absolute;
+    right:12%;
+    bottom:10%;
+    width:200px;
+    height:70px;
+    text-align:center;
+    z-index:121;
+    background:rgba(255, 255, 255, 0.1);
+    color:#ffffff;
+    border-style: none;
+    font-weight:100;
+    font-family:Bebas Neue;
+    font-size:26px;
+    cursor: pointer;
+    letter-spacing:.05cm;
+}
 .type{
     flex:1;
    
@@ -445,7 +518,7 @@ background:black;
 
     }
     .paragraph2 h1{
-        padding:10% 0 2% 0;
+        padding:10% 0 0% 0;
         
         font-size: 2rem;
        
@@ -454,25 +527,43 @@ background:black;
         height:70vh;
        position:relative;
        z-index:0;
-       
+      
     }
     .price-content img{
         width:100%;
         height:100%;
         object-fit: cover;
-        filter:brightness(25%);
+        filter:brightness(10%);
         position:absolute;
     }
     
     .table{
         gap:.9em;
         display:flex;
-       padding:0 6em 9em 6em;
+       padding:2em 6em 0em 6em;
        font-size:8px;
-       height:70vh;
+       height:50vh;
        width:100%;
        z-index:3;
-       align-items:center;
+       
+       align-items:start;
+    }
+     .price-content button{
+        position:absolute;
+        z-index: 121;
+        right:12%;
+        bottom:14%;
+        width:150px;
+        height:40px;
+        text-align:center;
+        z-index:121;
+        background:rgba(255, 255, 255, 0.1);
+        color:#ffffff;
+        border-style: none;
+        font-weight:100;
+        font-family:Bebas Neue;
+        font-size:16px;
+        cursor: pointer;
     }
     .type{
         flex:3;
@@ -495,13 +586,13 @@ background:black;
 }
 
 
-
+                                    /*ABOUT-SECTION*/
     
 .about-section{
     background-color: #000000;
     display:flex;
     flex-direction: row;
-    padding:10em 4.5em;
+    padding:5em 4.5em 10em 4.5em;
 }
 
 .about-text{
@@ -605,12 +696,12 @@ background:black;
         background-color: #000000;
         display:flex;
         flex-direction: column-reverse;
-        padding:4em 0em 8em 0em;
+        padding:0em 0em 6em 0em;
         gap:5em;
     }
     .about-text{
         max-height:400px;
-        background-color:rgb(10, 10, 10);
+        background-color:rgb(0, 0, 0);
         padding:2em;
         margin:0em 3em ;
         display:flex;
@@ -674,7 +765,7 @@ background:black;
 }
 .trust-section{
    
-    background-color: #000000;
+    background-color: #000;
     position: relative;
     height:20vh;
     width:100%;
@@ -685,7 +776,7 @@ background:black;
 .trust-text h1{
 
     font-family: Bebas Neue;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight:300;
     color:#ffffff;
     letter-spacing: 0.05cm; 
@@ -741,4 +832,244 @@ background:black;
         
        
     } 
+}
+
+
+.contact-content{
+height:100vh;
+margin:10em 0em 0 0;
+background-color:#000000;
+display:flex;
+align-items:center;
+justify-content: space-evenly; 
+flex-direction: row;
+
+}
+.contact-left{
+   position:relative;
+    width:100%;
+    height:100%;
+        display:flex;
+        align-items: center;
+        justify-content: right;
+}
+.contact-left img{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: 20% 50%;
+filter:contrast(100%);
+        
+}
+.left{
+    /* From https://css.glass */
+/* From https://css.glass */
+width:400px;
+height:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap:20px;
+    padding:2em 3.1em 2em 3em;
+background: rgba(10, 10, 10, 0.53);
+border-radius: 0px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.6px);
+-webkit-backdrop-filter: blur(7.6px);
+border: 1px solid rgba(10, 10, 10, 0.3);
+z-index:0;
+}
+::placeholder {
+    color: #ffffff;
+    opacity: .7; /* Firefox */
+  }
+.left-title{
+    font-family:"Bebas Neue";
+    font-size:2em;
+    color:#ffffff;
+    margin-bottom:5px;
+    font-weight: 100;
+    letter-spacing: 0.05cm;
+    
+}
+  .contact-inputs{
+    
+     width:300px;
+     height:50px;
+     border:none;
+     border-bottom: 4px rgba(53, 53, 53, 0.538) solid;
+     outline:none;
+     padding-left:25px;
+     font-weight:500;
+     background-color: transparent;
+     font-family:Comfortaa;
+     color:#fff;
+     font-size:14px;
+  }
+  
+  .left textarea{
+    height:140px;
+    padding-top:15px;
+    resize:none;
+    border-bottom:none;
+  }
+  .contact-inputs:focus:not(textarea){
+    border-bottom: 4px rgb(255, 60, 0) solid;
+  }
+  .left button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:20px;
+font-family:"Exo 2";
+    width:200px;
+    height:70px;
+    z-index:121;
+    background:rgba(255, 255, 255, 0.1);
+    color:#ffffff;
+    border-style: none;
+    font-weight:500;
+   
+    cursor: pointer;
+    letter-spacing:0cm;
+  }
+  .contact-right{
+    background-color:#000000;
+    width:100%;
+    height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  }
+  .right{
+    margin-top:5%;
+    width:440px;
+    height:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    gap:10px;
+    padding:2em 3em 0em 3em;
+
+  }
+ .icons{
+    margin-top:5%;
+    display:flex;
+    flex-direction:column ;
+    gap:30px;
+    width:30px;
+    height:30px;
+   
+ }
+ .right h1{
+    font-family:"Exo 2";
+    font-weight:400;
+    
+ }
+ .right h2{
+    font-family:"Exo 2";
+    font-weight:200;
+    font-size: 16px;
+    
+ }
+ @media only screen and (max-width: 600px) {
+    .contact-content{
+        height:100vh;
+        margin:5em 0em 8em 0;
+        flex-direction: column;
+        }
+        .contact-left{
+                 align-items: center;
+                 justify-content: center;
+         }
+         .left{
+            max-width:100%;
+            height:80%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:20px;
+            padding:2em 3.1em 2em 3em;
+       
+        
+        }
+        .left-title{
+            font-family:"Bebas Neue";
+            font-size:2em;
+            color:#ffffff;
+            margin-bottom:5px;
+            font-weight: 100;
+            letter-spacing: 0.05cm;
+            
+        }
+          .contact-inputs{
+             max-width:200px;
+             height:50px;
+             border:none;
+             border-bottom: 4px rgba(53, 53, 53, 0.538) solid;
+             outline:none;
+             font-weight:500;
+             background-color: transparent;
+             font-family:Comfortaa;
+             color:#fff;
+             font-size:14px;
+          }
+          
+          .left textarea{
+            height:140px;
+            padding-top:15px;
+            resize:none;
+            border-bottom:none;
+          }
+          .left button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:20px;
+            font-family:"Exo 2";
+            width:100px;
+            height:70px;        
+            z-index:121;
+            background:rgba(255, 255, 255, 0.1);
+            color:#ffffff;
+            border-style: none;
+            font-weight:500;
+            cursor: pointer;
+            letter-spacing:0cm;
+          }
+          .right{
+            margin-top:5%;
+            max-width:300px;
+            height:80%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            color:#fff;
+            gap:10px;
+            padding:2em 0em 0em 0em;
+ }
+ .right h1{
+    font-family:"Exo 2";
+    font-weight:400;
+    font-size:20px;
+    
+ }
+ .right h2{
+    font-family:"Exo 2";
+    font-weight:200;
+    font-size: 14px;
+    
+ }
+ .icons{
+    margin-top:5%;
+    display:flex;
+    flex-direction:column ;
+    gap:30px;
+    width:25px;
+    height:25px;
+   
+ }
 }
