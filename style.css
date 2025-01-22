@@ -958,10 +958,11 @@ z-index:0;
             align-items: center;
             gap:20px;
             padding:2em 3em 2em 3em;
-            background: none;
-            box-shadow: none;
-            backdrop-filter: none;
-            border: none;
+             background: rgba(10, 10, 10, 0);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+            
+            backdrop-filter: blur(0px);
+            border: 1px solid rgba(10, 10, 10, 0);
         
         }
         .left-title{
