@@ -107,6 +107,9 @@ const observer = new IntersectionObserver(intersections => {
       slides[i].style.display = "none";  
     }
     slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
   }
 
+
+ function contact() {
+    document.documentElement.scrollTop = 3550;
+  }   
